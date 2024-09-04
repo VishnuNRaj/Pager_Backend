@@ -1,0 +1,9 @@
+Auth/.env 
+Chat/.env
+Gateway/.env
+Auth/node_modules/
+Chat/node_modules/
+Gateway/node_modules/
+Auth/dist/
+Chat/dist/
+Gateway/dist/
