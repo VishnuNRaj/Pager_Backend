@@ -10,9 +10,10 @@ const ORIGIN:string[] = [
 ]
 const Config = <ConfigInterface>{
     PORT: env.AUTH_PORT || "",
-    MONGO: env.MONGO_AUTH || "",
+    MONGO: env.MONGO || "",
     API:env.AUTH_API,
-    ORIGIN:ORIGIN
+    ORIGIN:ORIGIN,
+    GRPC:env.GRPC_PORT,
 }
 
 export default Config;

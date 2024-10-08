@@ -4,15 +4,16 @@ config()
 
 const env = process.env
 
-const ORIGIN:string[] = [
+const ORIGIN: string[] = [
     env.GATEWAY || "",
     env.AUTH_API || ""
 ]
 const Config = <ConfigInterface>{
     PORT: env.CHAT_PORT || "",
-    MONGO: env.MONGO_CHAT || "",
-    API:env.CHAT_API,
-    ORIGIN:ORIGIN
+    MONGO: env.MONGO || "",
+    API: env.CHAT_API,
+    ORIGIN: ORIGIN,
+    GRPC: env.GRPC_PORT
 }
 
 export default Config;

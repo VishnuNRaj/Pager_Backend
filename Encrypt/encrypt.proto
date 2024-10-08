@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package encrypt;
+
+service EncService {
+   rpc StoreKeys (StoreKey) returns (StoreResponse);
+}
+
+message StoreKey {
+    string userId = 1;
+    string password = 2;
+}
+
+message StoreResponse {
+    string message = 1;
+    int32 status = 2;
+}
+

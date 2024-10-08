@@ -17,4 +17,16 @@ export interface RegisterWithPhoneAndEmail {
     email:string;
     otp:string;
     remember:boolean;
+    location:string;
+}
+
+export interface OTPValidation {
+    otp:string;
+    token:string;
+}
+
+export interface AddContact {
+    name:string;
+    phone:number;
+    location:string;
 }

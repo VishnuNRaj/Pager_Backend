@@ -4,7 +4,6 @@ package auth;
 
 service AuthService {
   rpc AuthenticateUser (Register) returns (RegisterResponse);
-  rpc RegisterUser (Register) returns (RegisterResponse);
 }
 
 message Register {

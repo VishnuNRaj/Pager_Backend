@@ -23,11 +23,12 @@ export const userSchema = new Schema<IUser>({
     verified:{
         type:Boolean,
         default:false
-    }
+    },
+    location:String,
 })
 
 userSchema.post("insertMany",(data:IUser[])=>bcryptUser(data))
 
 
 const UserModel = model<IUser>("users", userSchema)
-export default UserModel
+export default UserModel;
